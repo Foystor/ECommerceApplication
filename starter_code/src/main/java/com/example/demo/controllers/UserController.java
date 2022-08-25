@@ -54,13 +54,14 @@ public class UserController {
 		user.setCart(cart);
 		if (createUserRequest.getPassword().length() < 7 ||
 				!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			log.debug("Password too short or not get confirmed");
+			log.debug("Create user failure");
 			return ResponseEntity.badRequest().build();
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		log.info("Hashed password is {}", bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 
 		userRepository.save(user);
+		log.debug("Create user success");
 		return ResponseEntity.ok(user);
 	}
 	
