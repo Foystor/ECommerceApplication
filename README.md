@@ -17,11 +17,11 @@ The project requires to add authorization with implementing proper security and 
 
 ### CI/CD
 
-
+https://user-images.githubusercontent.com/74621252/187745779-c2f9a2ce-0801-4f58-9a4d-f4ba9afa4028.mov
 
 ### Splunk
 
-
+https://user-images.githubusercontent.com/74621252/187745869-b6bdb546-b3cd-4e32-97dc-12c5bbc06dce.mov
 
 ## Technologies
 
